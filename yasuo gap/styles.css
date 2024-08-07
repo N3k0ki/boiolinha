@@ -1,6 +1,8 @@
 @import url(reset.css);
 @import url(css/calculadora.css);
-
+@import url(css/teste.css);
+@import url(css/resultado.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 :root   {
     --cor-1: #0C1844 ;
     --cor-2: #C80036;

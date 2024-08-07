@@ -95,10 +95,22 @@ function displayMessage() {
             document.getElementById("output-value").innerText = "Espero que goste";
             break;
         case 4:
-            window.location.href = "https://example.com"; // Substitua pelo URL desejado
+            window.location.href = '/boiolinha-main/yasuo gap/html/teste.html'; // Substitua pelo URL desejado
             break;
-        default:
-            // Caso padrão (se necessário)
-            break;
+    }
+}
+
+function checkColor() {
+    const colorInput = document.getElementById('colorInput').value.toLowerCase();
+    const container = document.getElementById('container');
+
+    if (colorInput === 'vermelho') {
+        container.innerHTML = '';
+        const message = document.createElement('p');
+        message.innerText = 'Se a cor que você viu é vermelho, significa que está apaixonado por mim e você acha que veriamos nos casar e nos amar um ao outro';
+        message.style.fontSize = '24px';
+        message.style.color = 'var(--cor-3)';
+        message.style.margin = '0';
+        container.appendChild(message);
     }
 }
