@@ -1,0 +1,19 @@
+@import url(reset.css);
+@import url(css/calculadora.css);
+
+:root   {
+    --cor-1: #0C1844 ;
+    --cor-2: #C80036;
+    --cor-3: #FF6969;
+    --cor-4: #FFF5E1;
+
+    --fonte-principal: poppins;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--cor-1);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+}
