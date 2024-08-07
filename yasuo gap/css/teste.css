@@ -1,0 +1,41 @@
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: var(--cor-3);
+    font-size: 2.5em;
+    animation: radiant 1.5s infinite;
+}
+
+@keyframes radiant {
+    0% { text-shadow: 0 0 10px var(--cor-3), 0 0 20px var(--cor-3), 0 0 30px var(--cor-3), 0 0 40px var(--cor-3); }
+    50% { text-shadow: 0 0 20px var(--cor-3), 0 0 30px var(--cor-3), 0 0 40px var(--cor-3), 0 0 50px var(--cor-3); }
+    100% { text-shadow: 0 0 10px var(--cor-3), 0 0 20px var(--cor-3), 0 0 30px var(--cor-3), 0 0 40px var(--cor-3); }
+}
+
+.decorated-link {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--cor-2);
+    border: 2px solid var(--cor-2);
+    border-radius: 10px;
+    text-decoration: none;
+    animation: inflate 1.5s infinite alternate;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.decorated-link:hover {
+    background-color: var(--cor-3);
+    border-color: var(--cor-3);
+}
+
+@keyframes inflate {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
